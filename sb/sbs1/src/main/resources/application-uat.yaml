@@ -1,0 +1,9 @@
+server:
+  port: 8013
+person:
+  lastName: uat11@163.com
+  age: 34
+  likes:
+    - book
+    - girls
+    - movies

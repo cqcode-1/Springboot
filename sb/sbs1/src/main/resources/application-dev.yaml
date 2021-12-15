@@ -1,0 +1,9 @@
+server:
+  port: 8011
+person:
+  lastName: dev11@163.com
+  age: 34
+  likes:
+    - book
+    - girls
+    - movies

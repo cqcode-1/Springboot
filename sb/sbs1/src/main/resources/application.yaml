@@ -1,0 +1,12 @@
+server:
+ port: 8011
+person:
+  lastName: zhangsan11@163.com
+  age: 34
+  likes:
+    - book
+    - girls
+    - movies
+spring:
+  profiles:
+    active: dev
