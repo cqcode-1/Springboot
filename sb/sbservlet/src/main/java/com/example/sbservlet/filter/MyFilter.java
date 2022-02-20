@@ -10,7 +10,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
-@WebFilter(servletNames = "myServlet", urlPatterns = "/")
+@WebFilter(urlPatterns = "/")
 public class MyFilter implements Filter {
    @Override
    public void init(FilterConfig filterConfig) throws ServletException {

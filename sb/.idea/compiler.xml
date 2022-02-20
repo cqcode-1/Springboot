@@ -7,15 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sbs1" />
-        <module name="sbservlet" />
+        <module name="jdbc" />
+        <module name="i18nDemo" />
         <module name="sb" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="i18nDemo" options="-parameters" />
+      <module name="jdbc" options="-parameters" />
       <module name="sbs1" options="-parameters" />
-      <module name="sbservlet" options="-parameters" />
     </option>
   </component>
 </project>

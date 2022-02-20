@@ -1,5 +1,6 @@
 package com.example.sbservlet;
 
+import com.example.sbservlet.config.MyLocalResolver;
 import com.example.sbservlet.filter.MyFilter;
 import com.example.sbservlet.listener.MyListener;
 import com.example.sbservlet.ser.MyServlet;
@@ -12,6 +13,7 @@ import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.servlet.LocaleResolver;
 
 import java.util.EventListener;
 
@@ -43,5 +45,11 @@ public class SbservletApplication {
 		final FilterRegistrationBean<MyFilter> filter = new FilterRegistrationBean<>(new MyFilter());
 		return filter;
 	}
+
+	@Bean
+	public LocaleResolver localResolver(){
+		return new MyLocalResolver();
+	}
+
 
 }
